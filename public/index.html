@@ -1,0 +1,28 @@
+<!doctype>
+<hmtl>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale-scale, user-scalable=no">
+    <title>My Flappy</title>
+    <style>
+      body{
+        background: black;
+        padding: 0px;
+        margin: 0px
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <script src="js/phaser.js"></script>
+    <script src="js/boot.js"></script>
+
+    <script>
+      var game = new Phaser.Game(320,568);
+      game.state.add('boot',Flappy.Boot);
+      game.state.start('boot')
+    </script>
+  </body>
+</html>
